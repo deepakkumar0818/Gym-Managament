@@ -665,18 +665,20 @@
             <div class="tab-container">
                 <div class="tab-buttons">
                     <button class="tab-btn active" onclick="showTab('overview')">📊 Overview</button>
-                    <button class="tab-btn" onclick="showTab('milestone1')">📋 Milestone 1</button>
-                    <button class="tab-btn" onclick="showTab('milestone2')">📅 Milestone 2</button>
-                    <button class="tab-btn" onclick="showTab('milestone3')">🔗 Milestone 3</button>
-                    <button class="tab-btn" onclick="showTab('milestone4')">🎨 Milestone 4</button>
-                    <button class="tab-btn" onclick="showTab('milestone5')">💰 Milestone 5</button>
-                    <button class="tab-btn" onclick="showTab('milestone6')">🔐 Milestone 6</button>
-                    <button class="tab-btn" onclick="showTab('milestone7')">🧪 Milestone 7</button>
+                    <button class="tab-btn" onclick="showTab('milestone1')">📋 Core System</button>
+                    <button class="tab-btn" onclick="showTab('milestone2')">📅 Booking & Inventory</button>
+                    <button class="tab-btn" onclick="showTab('milestone3')">🔗 Data Management</button>
+                    <button class="tab-btn" onclick="showTab('milestone4')">🎨 UI & Design</button>
+                    <button class="tab-btn" onclick="showTab('milestone5')">💰 Books Integration</button>
+                    <button class="tab-btn" onclick="showTab('milestone6')">🔐 Suprema Biometric</button>
+                    <button class="tab-btn" onclick="showTab('milestone7')">🧪 Testing</button>
                     <button class="tab-btn" onclick="showTab('timeline')">⏰ Timeline</button>
+                    <button class="tab-btn" onclick="showTab('architecture')">🏗️ Architecture</button>
                     <button class="tab-btn" onclick="showTab('benefits')">💼 Benefits</button>
                 </div>
                 <div class="tab-indicator">
                     <div class="indicator-dot active"></div>
+                    <div class="indicator-dot"></div>
                     <div class="indicator-dot"></div>
                     <div class="indicator-dot"></div>
                     <div class="indicator-dot"></div>
@@ -755,45 +757,45 @@
                             <strong>Registration:</strong> Member signs up via PWA → Data stored in Catalyst DataStore → CRM creates customer profile → Biometric enrollment scheduled
                         </div>
                         <div class="workflow-step">
-                            <strong>Membership Activation:</strong> Payment processed via Books → Biometric access activated → Welcome package triggered → First session scheduled
+                            <strong>Membership Activation:</strong> Payment processed via Books  → Welcome package triggered → First session scheduled
                         </div>
                         <div class="workflow-step">
-                            <strong>Daily Usage:</strong> Biometric entry → Session attendance logged → Real-time trainer notification → CRM engagement tracking
+                            <strong>Daily Usage:</strong> Biometric entry → Attendance logged  → Real-time trainer notification → CRM engagement tracking
                         </div>
                         <div class="workflow-step">
-                            <strong>Session Booking:</strong> Member browses sessions → Credit validation → Seat reservation → Payment processing → Calendar sync
+                            <strong>Session Booking:</strong> Member browses sessions → Credit validation → Seat reservation
                         </div>
                         <div class="workflow-step">
-                            <strong>Merchandise Purchase:</strong> Browse inventory → Add to cart → Payment via Books → Stock adjustment → Delivery/pickup arranged
+                            <strong>Merchandise Purchase:</strong> Browse inventory → Add to cart → Stock adjustment
                         </div>
                         <div class="workflow-step">
-                            <strong>Renewal:</strong> Automated reminder sent → Online renewal via PWA → Payment processed → Access extended → Loyalty rewards applied
+                            <strong>Renewal:</strong> Automated reminder sent  Payment processed → Access extended → Loyalty rewards applied
                         </div>
                     </div>
 
                     <h4>👨‍🏫 Trainer Workflow:</h4>
                     <div class="workflow-container">
                         <div class="workflow-step">
-                            <strong>Session Preparation:</strong> Dashboard shows today's sessions → Member list with special notes → Equipment requirements displayed
+                            <strong>Session Preparation:</strong> Dashboard shows today's sessions
                         </div>
                         <div class="workflow-step">
                             <strong>Attendance Management:</strong> Biometric data synced → Manual attendance adjustment if needed → Session notes recorded
                         </div>
                         <div class="workflow-step">
-                            <strong>Member Progress:</strong> Track member improvements → Update fitness goals → Schedule follow-up sessions
+                            <strong>Member Progress:</strong> Track member improvements → Update fitness goals
                         </div>
                     </div>
 
                     <h4>🛠️ Admin Operations:</h4>
                     <div class="workflow-container">
                         <div class="workflow-step">
-                            <strong>Daily Dashboard:</strong> Revenue overview → Member check-ins → Trainer utilization → Equipment status → Pending approvals
+                            <strong>Daily Dashboard:</strong> Revenue overview → Member check-ins → Trainer utilization
                         </div>
                         <div class="workflow-step">
-                            <strong>Financial Management:</strong> Books integration shows real-time finances → Invoice generation → Payment tracking → Tax compliance
+                            <strong>Financial Management:</strong> Books integration shows real-time finances → Invoice generation → Payment tracking
                         </div>
                         <div class="workflow-step">
-                            <strong>Analytics & Reporting:</strong> Member engagement trends → Revenue analysis → Trainer performance → Equipment utilization
+                            <strong>Analytics & Reporting:</strong> Member engagement trends → Revenue analysis → Trainer performance
                         </div>
                     </div>
                 </div>
@@ -804,7 +806,7 @@
         <div class="tab-content" id="milestone1">
 
             <div class="slide">
-                <h2>📋 Milestone 1: Core System Setup with Zoho Catalyst</h2>
+                <h2>📋 Core System</h2>
                 
                 <div class="milestone">
                     <h3>1. Membership Management System</h3>
@@ -842,7 +844,7 @@
                             <strong>Payment Processing:</strong> Payment initiated → Catalyst handles gateway → Books creates invoice → CRM updates customer value
                         </div>
                         <div class="workflow-step">
-                            <strong>Renewal Management:</strong> Catalyst Cron jobs check expiry → Send reminders → Auto-deactivate if needed → Update biometric access
+                            <strong>Renewal Management:</strong> Catalyst Cron jobs check expiry → Send reminders → Auto-deactivate if needed
                         </div>
                     </div>
                 </div>
@@ -868,7 +870,7 @@
         <div class="tab-content" id="milestone2">
 
             <div class="slide">
-                <h2>📅 Milestone 2: Advanced Booking & Inventory System</h2>
+                <h2>📅 Booking & Inventory</h2>
                 
                 <div class="milestone">
                     <h3>1. Intelligent Session Booking System</h3>
@@ -879,8 +881,6 @@
                             <ul>
                                 <li>Calendar-based session creation in Catalyst</li>
                                 <li>Dynamic seat availability tracking</li>
-                                <li>Trainer allocation and conflict resolution</li>
-                                <li>Session fee management via Books integration</li>
                                 <li>Automated confirmation workflows</li>
                             </ul>
                         </div>
@@ -891,7 +891,7 @@
                                 <li>Real-time session availability display</li>
                                 <li>Credit-based booking validation</li>
                                 <li>Advanced filtering (type, date, trainer)</li>
-                                <li>Instant booking confirmation</li>
+                                <li>Instant Process payment </li>
                                 <li>Cancellation policy enforcement</li>
                             </ul>
                         </div>
@@ -904,9 +904,6 @@
                         </div>
                         <div class="workflow-step">
                             <strong>Member Booking:</strong> Member selects session → Check credits → Reserve seat → Process payment → Send confirmation
-                        </div>
-                        <div class="workflow-step">
-                            <strong>Attendance Tracking:</strong> Biometric check-in → Update Catalyst → Sync CRM → Trainer dashboard notification
                         </div>
                     </div>
                 </div>
@@ -932,7 +929,7 @@
         <div class="tab-content" id="milestone3">
 
             <div class="slide">
-                <h2>🔗 Milestone 3: Deep Zoho Ecosystem Integration</h2>
+                <h2>🔗 Data Management</h2>
                 
                 <div class="milestone">
                     <h3>Complete Data Synchronization Architecture</h3>
@@ -963,16 +960,6 @@
                                 <li>Inventory turnover analysis</li>
                             </ul>
                         </div>
-                        
-                        <div class="feature-card">
-                            <h4>🤖 Intelligent Automation</h4>
-                            <ul>
-                                <li>Smart renewal predictions</li>
-                                <li>Personalized session recommendations</li>
-                                <li>Automated marketing campaigns</li>
-                                <li>Dynamic pricing adjustments</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -982,7 +969,7 @@
         <div class="tab-content" id="milestone4">
 
             <div class="slide">
-                <h2>🎨 Milestone 4: Advanced User Interface Design</h2>
+                <h2>🎨 UI & Design</h2>
                 
                 <div class="milestone">
                     <h3>Progressive Web Application (PWA)</h3>
@@ -994,7 +981,6 @@
                                 <li>Native app-like experience</li>
                                 <li>Offline functionality for key features</li>
                                 <li>Push notifications for sessions/renewals</li>
-                                <li>Social login integration</li>
                                 <li>Personalized dashboard with insights</li>
                             </ul>
                         </div>
@@ -1005,7 +991,6 @@
                                 <li>Real-time session management</li>
                                 <li>Attendance tracking integration</li>
                                 <li>Member progress tracking</li>
-                                <li>Schedule optimization tools</li>
                                 <li>Performance analytics</li>
                             </ul>
                         </div>
@@ -1014,7 +999,6 @@
                             <h4>🛠️ Admin Dashboard</h4>
                             <ul>
                                 <li>Comprehensive business overview</li>
-                                <li>Multi-location management</li>
                                 <li>Staff management and permissions</li>
                                 <li>Financial reporting and analytics</li>
                                 <li>System configuration tools</li>
@@ -1033,9 +1017,6 @@
                         <div class="benefit-item">
                             <strong>Fast Loading:</strong> Optimized performance with caching strategies
                         </div>
-                        <div class="benefit-item">
-                            <strong>Accessible:</strong> WCAG compliant for all user types
-                        </div>
                     </div>
                 </div>
             </div>
@@ -1045,7 +1026,7 @@
         <div class="tab-content" id="milestone5">
 
             <div class="slide">
-                <h2>💰 Milestone 5: Advanced Financial Management with Zoho Books</h2>
+                <h2>💰 Books Integration</h2>
                 
                 <div class="milestone">
                     <h3>Comprehensive Financial Integration</h3>
@@ -1057,7 +1038,6 @@
                                 <li>Auto-generated invoices for all transactions</li>
                                 <li>Customizable invoice templates</li>
                                 <li>Tax calculation and compliance</li>
-                                <li>Multi-currency support</li>
                                 <li>Automated payment reminders</li>
                             </ul>
                         </div>
@@ -1077,7 +1057,6 @@
                             <h4>📊 Financial Reporting</h4>
                             <ul>
                                 <li>Revenue analytics by stream</li>
-                                <li>Member lifetime value tracking</li>
                                 <li>Trainer commission calculations</li>
                                 <li>Profit margin analysis</li>
                                 <li>Tax reporting and compliance</li>
@@ -1088,13 +1067,10 @@
                     <h4>🔄 Financial Workflow:</h4>
                     <div class="workflow-container">
                         <div class="workflow-step">
-                            <strong>Transaction Initiation:</strong> Any payment trigger → Catalyst processes → Books creates entry → CRM updates customer value
+                            <strong>Transaction Initiation:</strong> Any payment trigger → Catalyst processes → Books creates entry
                         </div>
                         <div class="workflow-step">
                             <strong>Invoice Management:</strong> Auto-generation → Email delivery → Payment tracking → Reconciliation → Financial reporting
-                        </div>
-                        <div class="workflow-step">
-                            <strong>Revenue Recognition:</strong> Service delivery → Revenue booking → Financial analytics → Business intelligence
                         </div>
                     </div>
                 </div>
@@ -1105,7 +1081,7 @@
         <div class="tab-content" id="milestone6">
 
             <div class="slide">
-                <h2>🔐 Milestone 6: Suprema Biometric System Integration</h2>
+                <h2>🔐 Suprema Biometric</h2>
                 
                 <div class="milestone">
                     <h3>Advanced Access Control & Attendance Tracking</h3>
@@ -1127,9 +1103,8 @@
                             <ul>
                                 <li>Peak hour analysis</li>
                                 <li>Member usage patterns</li>
-                                <li>Equipment utilization tracking</li>
                                 <li>Attendance trend reporting</li>
-                                <li>Member engagement scoring</li>
+                               
                             </ul>
                         </div>
                     </div>
@@ -1143,7 +1118,7 @@
                             <strong>Access Validation:</strong> Fingerprint scan → Suprema validates → Check membership status → Grant/deny access → Log activity
                         </div>
                         <div class="workflow-step">
-                            <strong>Attendance Tracking:</strong> Entry/exit logs → Catalyst processes → Update CRM records → Generate analytics → Trainer notifications
+                            <strong>Attendance Tracking:</strong> Entry/exit logs → Catalyst processes → Generate analytics
                         </div>
                         <div class="workflow-step">
                             <strong>Membership Changes:</strong> Status update in Catalyst → Sync with Suprema → Update access permissions → Real-time enforcement
@@ -1157,7 +1132,7 @@
         <div class="tab-content" id="milestone7">
 
             <div class="slide">
-                <h2>🧪 Milestone 7: Comprehensive Testing & Quality Assurance</h2>
+                <h2>🧪 Testing</h2>
                 
                 <div class="milestone">
                     <h3>Multi-Phase Testing Strategy</h3>
@@ -1191,7 +1166,6 @@
                                 <li>Staff training programs</li>
                                 <li>User documentation creation</li>
                                 <li>Video tutorials and guides</li>
-                                <li>24/7 technical support setup</li>
                                 <li>Regular system health monitoring</li>
                             </ul>
                         </div>
@@ -1257,12 +1231,21 @@
                 </div>
             </div>
 
-            <!-- Technical Architecture -->
+        </div>
+
+        <!-- Architecture Tab -->
+        <div class="tab-content" id="architecture">
+
             <div class="slide">
-                <h2>⚙️ Technical Architecture & Integration Details</h2>
                 
+
+
+
+                <h2>🏗️ Architecture</h2>
+                
+                <!-- Technical Architecture & Integration Details -->
                 <div class="milestone">
-                    <h3>Zoho Catalyst Integration Architecture</h3>
+                    <h3>⚙️ Technical Architecture & Integration Details</h3>
                     
                     <div class="feature-grid">
                         <div class="feature-card">
@@ -1294,24 +1277,8 @@
                                 <li><strong>Payment Gateways:</strong> Stripe, PayPal, Razorpay integration</li>
                                 <li><strong>Communication APIs:</strong> Twilio SMS, SendGrid Email</li>
                                 <li><strong>Calendar APIs:</strong> Google Calendar, Outlook integration</li>
-                                <li><strong> Analytics APIs:</strong> Custom reporting and business intelligence</li>
+                                <li><strong>Analytics APIs:</strong> Custom reporting and business intelligence</li>
                             </ul>
-                        </div>
-                    </div>
-
-                    <h4>🔐 Security & Compliance:</h4>
-                    <div class="benefits-list">
-                        <div class="benefit-item">
-                            <strong>Data Encryption:</strong> End-to-end encryption for all sensitive data
-                        </div>
-                        <div class="benefit-item">
-                            <strong>GDPR Compliance:</strong> Data privacy and user consent management
-                        </div>
-                        <div class="benefit-item">
-                            <strong>PCI DSS:</strong> Payment card industry compliance for transactions
-                        </div>
-                        <div class="benefit-item">
-                            <strong>Access Control:</strong> Role-based permissions and audit trails
                         </div>
                     </div>
                 </div>
@@ -1333,10 +1300,10 @@
                         <div class="feature-card">
                             <h4>💰 Revenue Optimization</h4>
                             <ul>
-                                <li><strong>30% increase</strong> in membership renewals through automated reminders</li>
-                                <li><strong>25% boost</strong> in session bookings via improved UX</li>
-                                <li><strong>40% growth</strong> in merchandise sales through integrated store</li>
-                                <li><strong>20% reduction</strong> in payment processing costs</li>
+                                <li><strong>Increase</strong> in membership renewals through automated reminders</li>
+                                <li><strong>Boost</strong> in session bookings via improved UX</li>
+                                <li><strong>Growth</strong> in merchandise sales through integrated store</li>
+                                <li><strong>Reduction</strong> in payment processing costs</li>
                                 <li><strong>Real-time</strong> revenue tracking and forecasting</li>
                             </ul>
                         </div>
@@ -1344,10 +1311,10 @@
                         <div class="feature-card">
                             <h4>⚡ Operational Efficiency</h4>
                             <ul>
-                                <li><strong>60% reduction</strong> in administrative tasks</li>
-                                <li><strong>50% faster</strong> member check-in process</li>
-                                <li><strong>80% decrease</strong> in booking conflicts</li>
-                                <li><strong>90% automation</strong> in financial processes</li>
+                                <li><strong> Reduction</strong> in administrative tasks</li>
+                                <li><strong>Faster</strong> member check-in process</li>
+                                <li><strong>Decrease</strong> in booking conflicts</li>
+                                <li><strong>Automation</strong> in financial processes</li>
                                 <li><strong>Real-time</strong> inventory and stock management</li>
                             </ul>
                         </div>
@@ -1358,7 +1325,7 @@
                                 <li><strong>360-degree</strong> member behavior analytics</li>
                                 <li><strong>Predictive</strong> membership churn analysis</li>
                                 <li><strong>Dynamic</strong> pricing optimization</li>
-                                <li><strong>Performance</strong> tracking for trainers and equipment</li>
+                                <li><strong>Performance</strong> tracking for trainers</li>
                                 <li><strong>Automated</strong> marketing campaign triggers</li>
                             </ul>
                         </div>
@@ -1390,16 +1357,6 @@
                     <h3>Comprehensive Support Framework</h3>
                     
                     <div class="feature-grid">
-                        <div class="feature-card">
-                            <h4>24/7 Technical Support</h4>
-                            <ul>
-                                <li>Dedicated support team for immediate issue resolution</li>
-                                <li>Multi-channel support (phone, email, chat, tickets)</li>
-                                <li>Remote system diagnostics and troubleshooting</li>
-                                <li>Proactive monitoring and alert systems</li>
-                                <li>Regular system health checks and optimization</li>
-                            </ul>
-                        </div>
                         
                         <div class="feature-card">
                             <h4>Training & Documentation</h4>
@@ -1460,7 +1417,7 @@
                             <strong>Project Kickoff:</strong> Finalize requirements, set up development environment, establish communication protocols
                         </div>
                         <div class="workflow-step">
-                            <strong>Phase 1 Delivery:</strong> Core system with member management and basic integrations (Week 3)
+                            <strong>Delivery:</strong> Core system with member management and basic integrations
                         </div>
                         <div class="workflow-step">
                             <strong>Stakeholder Training:</strong> Begin user training programs and documentation creation
